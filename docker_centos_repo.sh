@@ -12,7 +12,7 @@ ${line4}
 EOF
 }
 docker_ce_repo(){
-  define_repo_file docker-ce docker-ce https://mirrors.aliyun.com/docker-ce/linux/centos/7/$(uname -m)/stable/ > /etc/yum.repos.d/docker-ce.repo
+  define_repo_file docker-ce docker-ce https://mirrors.aliyun.com/docker-ce/linux/centos/7/$(uname -m)/stable/ > /etc/yum.repos.d/docker.repo
   yum makecache
 }
 docker_ce_repo
